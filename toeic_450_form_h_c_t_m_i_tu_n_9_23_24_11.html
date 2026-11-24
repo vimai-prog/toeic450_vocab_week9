@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOEIC 450+ | Form Học Từ Mới Tuần 9 (23-24/11)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --surface-soft: #f0f4fa;
+      --ink: #162032;
+      --muted: #5b677a;
+      --line: #dce3ee;
+      --primary: #1d4ed8;
+      --primary-soft: #e8efff;
+      --primary-ink: #1e3a8a;
+      --accent: #f59e0b;
+      --accent-soft: #fef3c7;
+      --accent-ink: #92400e;
+      --good: #15803d;
+      --good-soft: #dcfce7;
+      --bad: #b91c1c;
+      --bad-soft: #fee2e2;
+      --shadow: 0 8px 24px rgba(22, 32, 50, 0.06);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Geologica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .app-shell {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #16294a 0%, #1d4ed8 100%);
+      color: #ffffff;
+      border-radius: 18px;
+      padding: 24px 26px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .hero-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #bfdbfe;
+      margin-bottom: 6px;
+    }
+
+    .hero h1 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 14px;
+      color: #dbeafe;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 12px;
+      padding: 10px 14px;
+      min-width: 104px;
+      text-align: center;
+    }
+
+    .stat-pill .num {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .stat-pill .lbl {
+      font-size: 11px;
+      color: #dbeafe;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 8px;
+      margin: 20px 0 16px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--muted);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.24);
+    }
+
+    .toolbar {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .toolbar-left, .toolbar-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .input-search {
+      font-family: inherit;
+      font-size: 14px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      min-width: 220px;
+      outline: none;
+    }
+
+    .input-search:focus {
+      border-color: var(--primary);
+    }
+
+    .select-filter {
+      font-family: inherit;
+      font-size: 13px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: #ffffff;
+      color: var(--ink);
+    }
+
+    .btn {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 13px;
+      border-radius: 9px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #1e40af;
+      color: #ffffff;
+    }
+
+    .btn-amber {
+      background: var(--accent-soft);
+      border-color: #fcd34d;
+      color: var(--accent-ink);
+    }
+
+    .btn-good {
+      background: var(--good-soft);
+      border-color: #86efac;
+      color: var(--good);
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 12px;
+    }
+
+    .vocab-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 15px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .vocab-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .vocab-card.mastered {
+      border-color: #86efac;
+      background: #fafffb;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .word-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    .badges {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--primary-ink);
+      white-space: nowrap;
+    }
+
+    .badge-cefr {
+      background: #ede9fe;
+      color: #5b21b6;
+    }
+
+    .badge-src {
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    .meaning-box {
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+
+    .meaning-box.hidden {
+      background: var(--accent-soft);
+      border: 1px dashed #f59e0b;
+      color: var(--accent-ink);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .meaning-box.revealed {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+
+    .card-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .card-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 6px;
+      border-top: 1px solid #eef2f7;
+    }
+
+    .mini-btn {
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .mini-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .mini-btn.active {
+      background: var(--good-soft);
+      border-color: #86efac;
+      color: var(--good);
+    }
+
+    /* Flashcard Mode */
+    .flashcard-wrap {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .flashcard {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      min-height: 280px;
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      gap: 14px;
+      position: relative;
+    }
+
+    .flashcard .fc-term {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .flashcard .fc-meaning {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .flashcard .fc-hint {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .fc-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* Quiz / Form Mode */
+    .quiz-box {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: var(--surface-soft);
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 12px 0 18px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+
+    .quiz-question {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .quiz-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .options-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .opt-btn {
+      font-family: inherit;
+      font-size: 15px;
+      text-align: left;
+      padding: 12px 14px;
+      border-radius: 11px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.14s ease;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+    }
+
+    .opt-btn.wrong {
+      background: var(--bad-soft);
+      border-color: #fca5a5;
+      color: var(--bad);
+      cursor: not-allowed;
+    }
+
+    .opt-btn.correct {
+      background: var(--good-soft);
+      border-color: #86efac;
+      color: var(--good);
+      font-weight: 600;
+    }
+
+    .feedback-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 11px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .feedback-box.show { display: block; }
+    .feedback-box.err {
+      background: var(--bad-soft);
+      color: var(--bad);
+      border: 1px solid #fecaca;
+    }
+    .feedback-box.ok {
+      background: var(--good-soft);
+      color: var(--good);
+      border: 1px solid #bbf7d0;
+    }
+
+    .typing-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .typing-input {
+      flex: 1;
+      min-width: 220px;
+      font-family: inherit;
+      font-size: 16px;
+      padding: 11px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .typing-input:focus {
+      border-color: var(--primary);
+    }
+
+    .hidden-panel { display: none; }
+
+    .empty-state {
+      text-align: center;
+      padding: 36px 16px;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px dashed var(--line);
+      border-radius: var(--radius);
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 20px; }
+      .flashcard .fc-term { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div>
+        <div class="hero-eyebrow">TOEIC 450+ | Tuần 9 (23-24/11)</div>
+        <h1>Form Học &amp; Kiểm Tra Từ Mới</h1>
+        <p>Tổng hợp đầy đủ 35 từ/cụm từ từ Ghi chép trên lớp và Exercise 2 (Bộ 4, 5, 6, 7)</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <span class="num" id="statTotal">35</span>
+          <span class="lbl">Tổng số mục</span>
+        </div>
+        <div class="stat-pill">
+          <span class="num" id="statMastered">0</span>
+          <span class="lbl">Đã thuộc</span>
+        </div>
+        <div class="stat-pill">
+          <span class="num" id="statPct">0%</span>
+          <span class="lbl">Hoàn thành</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-tabs" aria-label="Chế độ học">
+      <button class="tab-btn active" data-tab="list">1. Danh sách &amp; Ôn tập</button>
+      <button class="tab-btn" data-tab="flashcards">2. Flashcards (Lật thẻ)</button>
+      <button class="tab-btn" data-tab="quiz">3. Form tự kiểm tra</button>
+    </nav>
+
+    <!-- PANEL 1: LIST -->
+    <section id="panel-list">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <input type="text" id="searchInput" class="input-search" placeholder="Tìm từ tiếng Anh hoặc nghĩa..." />
+          <select id="sectionFilter" class="select-filter" aria-label="Lọc theo phần">
+            <option value="ALL">Tất cả phần (35)</option>
+            <option value="Ghi chép trên lớp">Ghi chép trên lớp (9)</option>
+            <option value="Exercise 2 - Bộ 4">Exercise 2 - Bộ 4 (7)</option>
+            <option value="Exercise 2 - Bộ 5">Exercise 2 - Bộ 5 (6)</option>
+            <option value="Exercise 2 - Bộ 6">Exercise 2 - Bộ 6 (8)</option>
+            <option value="Exercise 2 - Bộ 7">Exercise 2 - Bộ 7 (5)</option>
+          </select>
+          <select id="statusFilter" class="select-filter" aria-label="Lọc theo trạng thái">
+            <option value="ALL">Tất cả trạng thái</option>
+            <option value="UNMASTERED">Chưa thuộc</option>
+            <option value="MASTERED">Đã thuộc</option>
+          </select>
+        </div>
+        <div class="toolbar-right">
+          <button class="btn btn-amber" id="toggleAllMeaningsBtn">Mở tất cả nghĩa</button>
+          <button class="btn" id="resetProgressBtn">Đặt lại tiến độ</button>
+        </div>
+      </div>
+      <div id="vocabGrid" class="vocab-grid"></div>
+    </section>
+
+    <!-- PANEL 2: FLASHCARDS -->
+    <section id="panel-flashcards" class="hidden-panel">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <select id="fcSectionFilter" class="select-filter" aria-label="Chọn bộ thẻ">
+            <option value="ALL">Tất cả phần</option>
+            <option value="UNMASTERED">Chỉ từ chưa thuộc</option>
+            <option value="Ghi chép trên lớp">Ghi chép trên lớp</option>
+            <option value="Exercise 2 - Bộ 4">Exercise 2 - Bộ 4</option>
+            <option value="Exercise 2 - Bộ 5">Exercise 2 - Bộ 5</option>
+            <option value="Exercise 2 - Bộ 6">Exercise 2 - Bộ 6</option>
+            <option value="Exercise 2 - Bộ 7">Exercise 2 - Bộ 7</option>
+          </select>
+          <button class="btn" id="fcShuffleBtn">Trộn thẻ</button>
+        </div>
+        <div class="toolbar-right">
+          <span id="fcCounter" style="font-size:13px;font-weight:600;color:var(--muted);">1 / 35</span>
+        </div>
+      </div>
+
+      <div class="flashcard-wrap">
+        <div class="flashcard" id="flashcardBox" tabindex="0" role="button" aria-label="Bấm để lật thẻ">
+          <div class="badges" id="fcBadges"></div>
+          <div class="fc-term" id="fcTerm">reimburse</div>
+          <div class="fc-meaning" id="fcMeaning" style="display:none;">hoàn tiền</div>
+          <div class="fc-hint" id="fcHint">Bấm vào thẻ hoặc nhấn Space để xem nghĩa</div>
+        </div>
+        <div class="fc-controls">
+          <button class="btn" id="fcPrevBtn">Thẻ trước</button>
+          <div style="display:flex;gap:8px;">
+            <button class="btn" id="fcSpeakBtn">Nghe phát âm</button>
+            <button class="btn btn-good" id="fcMasterBtn">Đánh dấu đã thuộc</button>
+          </div>
+          <button class="btn btn-primary" id="fcNextBtn">Thẻ tiếp</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 3: QUIZ FORM -->
+    <section id="panel-quiz" class="hidden-panel">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <select id="quizModeSelect" class="select-filter" aria-label="Chọn dạng kiểm tra">
+            <option value="mc">Trắc nghiệm chọn nghĩa</option>
+            <option value="typing">Điền từ tiếng Anh (Active Recall)</option>
+          </select>
+          <select id="quizSectionSelect" class="select-filter" aria-label="Phạm vi câu hỏi">
+            <option value="ALL">Toàn bộ 35 từ</option>
+            <option value="Ghi chép trên lớp">Ghi chép trên lớp</option>
+            <option value="Exercise 2 - Bộ 4">Exercise 2 - Bộ 4</option>
+            <option value="Exercise 2 - Bộ 5">Exercise 2 - Bộ 5</option>
+            <option value="Exercise 2 - Bộ 6">Exercise 2 - Bộ 6</option>
+            <option value="Exercise 2 - Bộ 7">Exercise 2 - Bộ 7</option>
+          </select>
+        </div>
+        <div class="toolbar-right">
+          <span id="quizScoreLabel" style="font-size:13px;font-weight:700;color:var(--primary);">Đúng: 0 / 0</span>
+          <button class="btn btn-primary" id="quizRestartBtn">Bắt đầu lượt mới</button>
+        </div>
+      </div>
+
+      <div class="quiz-box" id="quizBox">
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);">
+          <span id="quizProgressText">Câu 1 / 35</span>
+          <span id="quizTagText"></span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="quizProgressFill"></div></div>
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="quiz-sub" id="quizSub"></div>
+        <div id="quizInteractiveArea"></div>
+        <div class="feedback-box" id="quizFeedback"></div>
+        <div style="display:flex;justify-content:flex-end;margin-top:14px;">
+          <button class="btn btn-primary" id="quizNextBtn" style="display:none;">Câu tiếp theo</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const VOCAB = [
+      // Ghi chép trên lớp (9)
+      { id: 1, term: "reimburse", pos: "v", cefr: "C1", section: "Ghi chép trên lớp", meaning: "hoàn tiền", note: "Thường dùng trong chi phí công tác, hóa đơn (reimburse expenses)." },
+      { id: 2, term: "outcome = result", pos: "n", cefr: "B2", section: "Ghi chép trên lớp", meaning: "kết quả", note: "Từ đồng nghĩa phổ biến trong Part 5 & Part 7." },
+      { id: 3, term: "prevent from V-ing", pos: "phr", cefr: "B1", section: "Ghi chép trên lớp", meaning: "ngăn chặn / ngăn cản làm gì", note: "Cấu trúc: prevent + O + from + V-ing." },
+      { id: 4, term: "perform ≈ conduct", pos: "v", cefr: "B2", section: "Ghi chép trên lớp", meaning: "trình bày / trình diễn / thực hiện", note: "Collocation hay gặp: perform/conduct a survey, an audit, a review." },
+      { id: 5, term: "audit / accounting", pos: "n", cefr: "B2", section: "Ghi chép trên lớp", meaning: "kiểm toán / kế toán", note: "audit (kiểm toán) khác với accounting (kế toán)." },
+      { id: 6, term: "external >< internal", pos: "adj", cefr: "B2", section: "Ghi chép trên lớp", meaning: "bên ngoài >< bên trong", note: "Cặp từ trái nghĩa: external audit >< internal audit." },
+      { id: 7, term: "main objective = primary objective", pos: "n phr", cefr: "B2", section: "Ghi chép trên lớp", meaning: "mục tiêu chủ yếu / mục tiêu chính", note: "Cụm danh từ hay xuất hiện trong email thông báo, báo cáo." },
+      { id: 8, term: "retail >< wholesale", pos: "n/adj", cefr: "B2", section: "Ghi chép trên lớp", meaning: "bán lẻ >< bán buôn", note: "Cặp từ trái nghĩa thường gặp trong chủ đề kinh doanh." },
+      { id: 9, term: "one ⇒ oh", pos: "note", cefr: "A2", section: "Ghi chép trên lớp", meaning: "cách đọc số trong bài nghe (lưu ý phân biệt khi nghe số)", note: "Ghi chú phát âm/nghe số trong lớp." },
+
+      // Exercise 2 - Bộ 4 (7)
+      { id: 10, term: "maintenance", pos: "n", cefr: "B2", section: "Exercise 2 - Bộ 4", meaning: "sự bảo trì, duy tu", note: "Ví dụ: regular maintenance (bảo trì định kỳ)." },
+      { id: 11, term: "respectively", pos: "adv", cefr: "B2", section: "Exercise 2 - Bộ 4", meaning: "tương ứng, lần lượt", note: "Thường đứng cuối câu liệt kê hai cặp đối tượng." },
+      { id: 12, term: "undergo", pos: "v", cefr: "B2", section: "Exercise 2 - Bộ 4", meaning: "trải qua (quy trình, kiểm tra)", note: "Collocation: undergo inspection / undergo renovation." },
+      { id: 13, term: "thorough", pos: "adj", cefr: "B2", section: "Exercise 2 - Bộ 4", meaning: "kỹ lưỡng, toàn diện", note: "Ví dụ: a thorough inspection / review." },
+      { id: 14, term: "bidding process", pos: "n phr", cefr: "B2", section: "Exercise 2 - Bộ 4", meaning: "quy trình đấu thầu", note: "Thuật ngữ văn phòng / hợp đồng trong Part 6, Part 7." },
+      { id: 15, term: "aforementioned", pos: "adj", cefr: "C1", section: "Exercise 2 - Bộ 4", meaning: "đã được đề cập ở trên", note: "Dùng nhiều trong văn bản hành chính, hợp đồng." },
+      { id: 16, term: "under review", pos: "phr", cefr: "B2", section: "Exercise 2 - Bộ 4", meaning: "đang được xem xét", note: "Cụm giới từ: The proposal is currently under review." },
+
+      // Exercise 2 - Bộ 5 (6)
+      { id: 17, term: "machinist", pos: "n", cefr: "B2", section: "Exercise 2 - Bộ 5", meaning: "thợ máy, công nhân cơ khí", note: "Danh từ chỉ nghề nghiệp (-ist)." },
+      { id: 18, term: "operate", pos: "v", cefr: "B1", section: "Exercise 2 - Bộ 5", meaning: "vận hành", note: "operate machinery / operate a business." },
+      { id: 19, term: "machinery", pos: "n", cefr: "B2", section: "Exercise 2 - Bộ 5", meaning: "máy móc, thiết bị", note: "Danh từ không đếm được." },
+      { id: 20, term: "troubleshoot", pos: "v", cefr: "C1", section: "Exercise 2 - Bộ 5", meaning: "tìm và khắc phục sự cố", note: "Thường dùng với thiết bị, phần mềm, kỹ thuật." },
+      { id: 21, term: "fast-paced", pos: "adj", cefr: "B2", section: "Exercise 2 - Bộ 5", meaning: "có nhịp độ nhanh, khẩn trương", note: "Ví dụ: a fast-paced work environment." },
+      { id: 22, term: "tight deadline", pos: "n phr", cefr: "B2", section: "Exercise 2 - Bộ 5", meaning: "thời hạn gấp rút", note: "Collocation: meet a tight deadline." },
+
+      // Exercise 2 - Bộ 6 (8)
+      { id: 23, term: "historical landmark", pos: "n phr", cefr: "B2", section: "Exercise 2 - Bộ 6", meaning: "địa danh lịch sử", note: "Cụm danh từ chủ đề du lịch, bảo tồn." },
+      { id: 24, term: "barely", pos: "adv", cefr: "B2", section: "Exercise 2 - Bộ 6", meaning: "hầu như không", note: "Trạng từ mang nghĩa phủ định." },
+      { id: 25, term: "modify / modification", pos: "v/n", cefr: "B2", section: "Exercise 2 - Bộ 6", meaning: "sửa đổi, thay đổi / sự sửa đổi", note: "Gia đình từ: modify (v) - modification (n)." },
+      { id: 26, term: "fixture", pos: "n", cefr: "C1", section: "Exercise 2 - Bộ 6", meaning: "thiết bị cố định (gắn liền với tòa nhà)", note: "Ví dụ: lighting fixtures (thiết bị chiếu sáng cố định)." },
+      { id: 27, term: "large-scale renovation", pos: "n phr", cefr: "B2", section: "Exercise 2 - Bộ 6", meaning: "đợt cải tạo quy mô lớn", note: "Tính từ ghép + danh từ." },
+      { id: 28, term: "amenity", pos: "n", cefr: "C1", section: "Exercise 2 - Bộ 6", meaning: "tiện nghi phục vụ khách", note: "Thường dùng số nhiều: amenities (khách sạn, tòa nhà)." },
+      { id: 29, term: "disruption", pos: "n", cefr: "B2", section: "Exercise 2 - Bộ 6", meaning: "sự gián đoạn, xáo trộn", note: "Ví dụ: minimize disruption to customers." },
+      { id: 30, term: "underway", pos: "adj", cefr: "B2", section: "Exercise 2 - Bộ 6", meaning: "đang được tiến hành", note: "Thường đi với to be: Construction is underway." },
+
+      // Exercise 2 - Bộ 7 (5)
+      { id: 31, term: "conduct a review", pos: "phr", cefr: "B2", section: "Exercise 2 - Bộ 7", meaning: "tiến hành rà soát, đánh giá", note: "Cụm động từ đồng nghĩa: carry out a review." },
+      { id: 32, term: "agency", pos: "n", cefr: "B2", section: "Exercise 2 - Bộ 7", meaning: "công ty đại diện / đơn vị dịch vụ", note: "Ví dụ: travel agency, marketing agency." },
+      { id: 33, term: "professionalism", pos: "n", cefr: "B2", section: "Exercise 2 - Bộ 7", meaning: "tác phong chuyên nghiệp", note: "Danh từ trừu tượng từ professional." },
+      { id: 34, term: "at your earliest convenience", pos: "phr", cefr: "B2", section: "Exercise 2 - Bộ 7", meaning: "vào lúc thuận tiện sớm nhất của bạn", note: "Mẫu câu kết email lịch sự rất hay gặp trong TOEIC." },
+      { id: 35, term: "strengthen", pos: "v", cefr: "B2", section: "Exercise 2 - Bộ 7", meaning: "củng cố, thắt chặt", note: "Đuôi -en biến danh từ strength thành động từ." }
+    ];
+
+    const STORAGE_KEY = "toeic450_tuan9_mastered_v1";
+    let masteredIds = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"));
+    let allRevealed = false;
+
+    function saveMastered() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...masteredIds]));
+      updateStats();
+    }
+
+    function updateStats() {
+      const total = VOCAB.length;
+      const done = masteredIds.size;
+      const pct = Math.round((done / total) * 100);
+      document.getElementById("statTotal").textContent = total;
+      document.getElementById("statMastered").textContent = done;
+      document.getElementById("statPct").textContent = pct + "%";
+    }
+
+    function speakText(text) {
+      if (!("speechSynthesis" in window)) return;
+      const clean = text.split("=")[0].split("≈")[0].split("><")[0].split("/")[0].split("⇒")[0].trim();
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(clean);
+      utter.lang = "en-US";
+      utter.rate = 0.92;
+      window.speechSynthesis.speak(utter);
+    }
+
+    // Tabs
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const target = btn.dataset.tab;
+        ["list", "flashcards", "quiz"].forEach(p => {
+          document.getElementById("panel-" + p).classList.toggle("hidden-panel", p !== target);
+        });
+        if (target === "flashcards") renderFlashcard();
+      });
+    });
+
+    // PANEL 1: LIST
+    const vocabGrid = document.getElementById("vocabGrid");
+    const searchInput = document.getElementById("searchInput");
+    const sectionFilter = document.getElementById("sectionFilter");
+    const statusFilter = document.getElementById("statusFilter");
+    const toggleAllBtn = document.getElementById("toggleAllMeaningsBtn");
+
+    function renderList() {
+      const q = searchInput.value.trim().toLowerCase();
+      const sec = sectionFilter.value;
+      const st = statusFilter.value;
+
+      const filtered = VOCAB.filter(item => {
+        const matchSec = sec === "ALL" || item.section === sec;
+        const isMastered = masteredIds.has(item.id);
+        const matchSt = st === "ALL" || (st === "MASTERED" && isMastered) || (st === "UNMASTERED" && !isMastered);
+        const matchQ = !q || item.term.toLowerCase().includes(q) || item.meaning.toLowerCase().includes(q);
+        return matchSec && matchSt && matchQ;
+      });
+
+      if (!filtered.length) {
+        vocabGrid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;">Không có từ vựng nào khớp bộ lọc hiện tại.</div>`;
+        return;
+      }
+
+      vocabGrid.innerHTML = "";
+      filtered.forEach(item => {
+        const isMastered = masteredIds.has(item.id);
+        const card = document.createElement("article");
+        card.className = "vocab-card" + (isMastered ? " mastered" : "");
+
+        const top = document.createElement("div");
+        top.className = "card-top";
+        top.innerHTML = `
+          <h3 class="word-title">${item.term}</h3>
+          <div class="badges">
+            <span class="badge">${item.pos}</span>
+            <span class="badge badge-cefr">${item.cefr}</span>
+          </div>
+        `;
+
+        const meaningBox = document.createElement("div");
+        meaningBox.className = "meaning-box " + (allRevealed ? "revealed" : "hidden");
+        meaningBox.textContent = allRevealed ? item.meaning : "Bấm để mở nghĩa tiếng Việt";
+        meaningBox.addEventListener("click", () => {
+          const isHidden = meaningBox.classList.contains("hidden");
+          meaningBox.classList.toggle("hidden", !isHidden);
+          meaningBox.classList.toggle("revealed", isHidden);
+          meaningBox.textContent = isHidden ? item.meaning : "Bấm để mở nghĩa tiếng Việt";
+        });
+
+        const note = document.createElement("div");
+        note.className = "card-note";
+        note.textContent = `${item.section} · ${item.note}`;
+
+        const actions = document.createElement("div");
+        actions.className = "card-actions";
+
+        const speakBtn = document.createElement("button");
+        speakBtn.className = "mini-btn";
+        speakBtn.textContent = "Phát âm";
+        speakBtn.addEventListener("click", () => speakText(item.term));
+
+        const masterBtn = document.createElement("button");
+        masterBtn.className = "mini-btn" + (isMastered ? " active" : "");
+        masterBtn.textContent = isMastered ? "Đã thuộc ✓" : "Đánh dấu thuộc";
+        masterBtn.addEventListener("click", () => {
+          if (masteredIds.has(item.id)) masteredIds.delete(item.id);
+          else masteredIds.add(item.id);
+          saveMastered();
+          renderList();
+        });
+
+        actions.append(speakBtn, masterBtn);
+        card.append(top, meaningBox, note, actions);
+        vocabGrid.appendChild(card);
+      });
+    }
+
+    toggleAllBtn.addEventListener("click", () => {
+      allRevealed = !allRevealed;
+      toggleAllBtn.textContent = allRevealed ? "Ẩn tất cả nghĩa" : "Mở tất cả nghĩa";
+      renderList();
+    });
+
+    document.getElementById("resetProgressBtn").addEventListener("click", () => {
+      masteredIds.clear();
+      saveMastered();
+      renderList();
+      renderFlashcard();
+    });
+
+    [searchInput, sectionFilter, statusFilter].forEach(el => {
+      el.addEventListener("input", renderList);
+      el.addEventListener("change", renderList);
+    });
+
+    // PANEL 2: FLASHCARDS
+    let fcDeck = [...VOCAB];
+    let fcIdx = 0;
+    let fcFlipped = false;
+
+    function rebuildFcDeck() {
+      const f = document.getElementById("fcSectionFilter").value;
+      if (f === "ALL") fcDeck = [...VOCAB];
+      else if (f === "UNMASTERED") fcDeck = VOCAB.filter(v => !masteredIds.has(v.id));
+      else fcDeck = VOCAB.filter(v => v.section === f);
+      fcIdx = 0;
+      fcFlipped = false;
+      renderFlashcard();
+    }
+
+    function renderFlashcard() {
+      const box = document.getElementById("flashcardBox");
+      const counter = document.getElementById("fcCounter");
+      if (!fcDeck.length) {
+        counter.textContent = "0 / 0";
+        document.getElementById("fcBadges").innerHTML = "";
+        document.getElementById("fcTerm").textContent = "Đã hoàn thành bộ thẻ này!";
+        document.getElementById("fcMeaning").style.display = "none";
+        document.getElementById("fcHint").textContent = "Chọn bộ thẻ khác ở thanh công cụ phía trên.";
+        return;
+      }
+      if (fcIdx >= fcDeck.length) fcIdx = 0;
+      const item = fcDeck[fcIdx];
+      counter.textContent = `${fcIdx + 1} / ${fcDeck.length}`;
+      document.getElementById("fcBadges").innerHTML = `
+        <span class="badge">${item.pos}</span>
+        <span class="badge badge-cefr">${item.cefr}</span>
+        <span class="badge badge-src">${item.section}</span>
+      `;
+      document.getElementById("fcTerm").textContent = item.term;
+      const mEl = document.getElementById("fcMeaning");
+      mEl.textContent = item.meaning;
+      mEl.style.display = fcFlipped ? "block" : "none";
+      document.getElementById("fcHint").textContent = fcFlipped
+        ? item.note
+        : "Bấm vào thẻ hoặc nhấn Space để xem nghĩa";
+      const mBtn = document.getElementById("fcMasterBtn");
+      const done = masteredIds.has(item.id);
+      mBtn.textContent = done ? "Bỏ đánh dấu thuộc" : "Đánh dấu đã thuộc";
+      box.style.borderColor = done ? "#86efac" : "var(--line)";
+    }
+
+    function flipFlashcard() {
+      if (!fcDeck.length) return;
+      fcFlipped = !fcFlipped;
+      renderFlashcard();
+    }
+
+    document.getElementById("flashcardBox").addEventListener("click", flipFlashcard);
+    document.getElementById("fcSectionFilter").addEventListener("change", rebuildFcDeck);
+    document.getElementById("fcShuffleBtn").addEventListener("click", () => {
+      for (let i = fcDeck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [fcDeck[i], fcDeck[j]] = [fcDeck[j], fcDeck[i]];
+      }
+      fcIdx = 0;
+      fcFlipped = false;
+      renderFlashcard();
+    });
+    document.getElementById("fcPrevBtn").addEventListener("click", () => {
+      if (!fcDeck.length) return;
+      fcIdx = (fcIdx - 1 + fcDeck.length) % fcDeck.length;
+      fcFlipped = false;
+      renderFlashcard();
+    });
+    document.getElementById("fcNextBtn").addEventListener("click", () => {
+      if (!fcDeck.length) return;
+      fcIdx = (fcIdx + 1) % fcDeck.length;
+      fcFlipped = false;
+      renderFlashcard();
+    });
+    document.getElementById("fcSpeakBtn").addEventListener("click", () => {
+      if (fcDeck.length) speakText(fcDeck[fcIdx].term);
+    });
+    document.getElementById("fcMasterBtn").addEventListener("click", () => {
+      if (!fcDeck.length) return;
+      const id = fcDeck[fcIdx].id;
+      if (masteredIds.has(id)) masteredIds.delete(id);
+      else masteredIds.add(id);
+      saveMastered();
+      renderList();
+      renderFlashcard();
+    });
+
+    // PANEL 3: QUIZ FORM
+    let quizDeck = [];
+    let quizIdx = 0;
+    let quizCorrect = 0;
+    let quizAnswered = 0;
+    let currentSolved = false;
+
+    function shuffleArr(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function startQuiz() {
+      const sec = document.getElementById("quizSectionSelect").value;
+      const pool = sec === "ALL" ? VOCAB : VOCAB.filter(v => v.section === sec);
+      quizDeck = shuffleArr(pool);
+      quizIdx = 0;
+      quizCorrect = 0;
+      quizAnswered = 0;
+      renderQuizQuestion();
+    }
+
+    function updateQuizScore() {
+      document.getElementById("quizScoreLabel").textContent = `Đúng: ${quizCorrect} / ${quizAnswered}`;
+    }
+
+    function renderQuizQuestion() {
+      updateQuizScore();
+      const area = document.getElementById("quizInteractiveArea");
+      const fb = document.getElementById("quizFeedback");
+      const nextBtn = document.getElementById("quizNextBtn");
+      fb.className = "feedback-box";
+      fb.textContent = "";
+      nextBtn.style.display = "none";
+      currentSolved = false;
+
+      if (quizIdx >= quizDeck.length) {
+        document.getElementById("quizProgressText").textContent = `Hoàn thành ${quizDeck.length} / ${quizDeck.length}`;
+        document.getElementById("quizProgressFill").style.width = "100%";
+        document.getElementById("quizTagText").textContent = "";
+        document.getElementById("quizQuestion").textContent = "Bạn đã hoàn thành lượt kiểm tra!";
+        document.getElementById("quizSub").textContent = `Kết quả: ${quizCorrect} / ${quizDeck.length} câu đúng ngay lần chọn đầu hoặc sau khi tự sửa.`;
+        area.innerHTML = `<button class="btn btn-primary" onclick="startQuiz()">Làm lại lượt mới</button>`;
+        return;
+      }
+
+      const item = quizDeck[quizIdx];
+      const mode = document.getElementById("quizModeSelect").value;
+      document.getElementById("quizProgressText").textContent = `Câu ${quizIdx + 1} / ${quizDeck.length}`;
+      document.getElementById("quizProgressFill").style.width = Math.round((quizIdx / quizDeck.length) * 100) + "%";
+      document.getElementById("quizTagText").textContent = `${item.pos} · ${item.cefr} · ${item.section}`;
+
+      if (mode === "mc") {
+        document.getElementById("quizQuestion").textContent = item.term;
+        document.getElementById("quizSub").textContent = "Chọn nghĩa tiếng Việt chính xác nhất:";
+        const distractors = shuffleArr(VOCAB.filter(v => v.id !== item.id)).slice(0, 3);
+        const options = shuffleArr([item, ...distractors]);
+
+        const list = document.createElement("div");
+        list.className = "options-list";
+        let hadMistake = false;
+
+        options.forEach(opt => {
+          const btn = document.createElement("button");
+          btn.className = "opt-btn";
+          btn.textContent = opt.meaning;
+          btn.addEventListener("click", () => {
+            if (currentSolved) return;
+            if (opt.id === item.id) {
+              btn.classList.add("correct");
+              currentSolved = true;
+              quizAnswered++;
+              if (!hadMistake) quizCorrect++;
+              updateQuizScore();
+              fb.className = "feedback-box show ok";
+              fb.textContent = `Chính xác! "${item.term}" (${item.pos}) nghĩa là "${item.meaning}". ${item.note}`;
+              nextBtn.style.display = "inline-block";
+              list.querySelectorAll(".opt-btn").forEach(b => b.disabled = true);
+            } else {
+              hadMistake = true;
+              btn.classList.add("wrong");
+              btn.disabled = true;
+              fb.className = "feedback-box show err";
+              fb.textContent = `Chưa chính xác. Hãy loại trừ phương án vừa chọn và thử lại.`;
+            }
+          });
+          list.appendChild(btn);
+        });
+        area.innerHTML = "";
+        area.appendChild(list);
+      } else {
+        const primaryTarget = item.term.split("=")[0].split("≈")[0].split("><")[0].split("/")[0].split("⇒")[0].trim();
+        document.getElementById("quizQuestion").textContent = item.meaning;
+        document.getElementById("quizSub").textContent = `Gợi ý: từ loại (${item.pos}), bắt đầu bằng "${primaryTarget[0]}..." (${primaryTarget.length} ký tự)`;
+
+        const row = document.createElement("div");
+        row.className = "typing-row";
+        const inp = document.createElement("input");
+        inp.type = "text";
+        inp.className = "typing-input";
+        inp.placeholder = "Nhập từ hoặc cụm từ tiếng Anh...";
+        const checkBtn = document.createElement("button");
+        checkBtn.className = "btn btn-primary";
+        checkBtn.textContent = "Kiểm tra";
+
+        const validateTyping = () => {
+          if (currentSolved) return;
+          const val = inp.value.trim().toLowerCase();
+          if (!val) return;
+          const candidates = item.term
+            .split(/=|≈|><|\/|⇒/)
+            .map(s => s.trim().toLowerCase());
+          if (candidates.includes(val)) {
+            currentSolved = true;
+            quizAnswered++;
+            quizCorrect++;
+            updateQuizScore();
+            inp.disabled = true;
+            checkBtn.disabled = true;
+            fb.className = "feedback-box show ok";
+            fb.textContent = `Chính xác! Đáp án đầy đủ: ${item.term} (${item.meaning}).`;
+            nextBtn.style.display = "inline-block";
+          } else {
+            fb.className = "feedback-box show err";
+            fb.textContent = `Chưa đúng. Gợi ý 2 chữ cái đầu: "${primaryTarget.slice(0, 2)}...". Hãy thử lại!`;
+          }
+        };
+
+        checkBtn.addEventListener("click", validateTyping);
+        inp.addEventListener("keydown", e => {
+          if (e.key === "Enter") validateTyping();
+        });
+
+        row.append(inp, checkBtn);
+        area.innerHTML = "";
+        area.appendChild(row);
+        setTimeout(() => inp.focus(), 50);
+      }
+    }
+
+    document.getElementById("quizNextBtn").addEventListener("click", () => {
+      quizIdx++;
+      renderQuizQuestion();
+    });
+    document.getElementById("quizRestartBtn").addEventListener("click", startQuiz);
+    document.getElementById("quizModeSelect").addEventListener("change", startQuiz);
+    document.getElementById("quizSectionSelect").addEventListener("change", startQuiz);
+
+    // Init
+    updateStats();
+    renderList();
+    rebuildFcDeck();
+    startQuiz();
+  </script>
+</body>
+</html>
